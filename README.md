@@ -92,7 +92,7 @@ There is a number of usefull defines in swipe.h, that can be adjusted to manipul
 - SWIPE_RIGHT_MIN_VAL - Minimum linear slider position needed to initiate right swipe movement. Can be any number from 0 to (half of maximum sensor value).
 - SWIPE_LEFT_MIN_VAL - Minimum linear slider position needed to initiate left swipe movement. Can be any number from (half of the maximum sensor value) to (maximum sensor value).
 - MINIMUM_POSITIONS_NUMBER - Minimum number of different positions needed to be saved by Swipe state machine to recognize swipe movement. The higher the value, the more accurate the detected swipe movement will be.
-## Time defines
+## Timing defines
 This defines can be rewrited, if is used different IRQ_period (for TIM6, TIM7) and SYSCLK frequency. Basic TIM6 period is 65535, TIM7 period is 16000, SYSCLK 32 MHz.
 
 - LED_3SEC_TIME_FRAME - Number of TIM7 interrupt cycles needed to create 200Hz 70% PWM signal for LED. Can be calculated by using this expression: 3000/(IRQ_period / SYSCLK * 1000 * 10)
