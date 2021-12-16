@@ -76,7 +76,7 @@ typedef struct {
 ```
 ## Implementation
 Swipe is done by using state machine. All the possible states can be seen in the `swipe_state_t` enum. One iteration of this state machine can be done by calling `void Swipe_State_Machine(SwipeObj* Swipe)`. 
-From a code point of view, swipe is implemented by using created `SwipeObj` structure. **To use this structure properly, special initialisation of this struct should be done by calling `void Swipe_Init(SwipeObj* Swipe);` function with passing newly create `SwipeObj` structure.**
+From a code point of view, swipe is implemented by using created `SwipeObj` structure. **To use this structure properly, special initialisation of this struct should be done by calling `void Swipe_Init(SwipeObj* Swipe);` function with passing newly created `SwipeObj` structure.**
 To change time configuration `void Procces_Button (SwipeObj* Swipe);` function can be used.
 To manipulate with LED `void LED_Handle(SwipeObj* Swipe);` function can be called. This function implements 1/10 of PWM signal and should be called 10 times to create full PWM signal.
 ## Example
